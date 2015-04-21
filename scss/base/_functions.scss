@@ -1,0 +1,30 @@
+//------------------------------------//
+//  $FUNCTIONS
+//------------------------------------//
+
+@function map($func, $list, $args...) {
+  $new-list: ();
+  @each $item in $list {
+    $new-list: append($new-list, call($func, $item, $args...));
+  }
+  @return $new-list;
+}
+
+
+@function multiply($a, $b) {
+  @if type-of($a) == 'number' {
+    @return $a * $b;
+  } @else {
+    @return $a;
+  }
+}
+
+
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@function force-unit($value, $unit) {
+  $value: strip-unit($value);
+  @return if($value == 0, 0, $value + $unit);
+}

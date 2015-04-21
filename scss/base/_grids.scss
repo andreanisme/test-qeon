@@ -1,0 +1,45 @@
+//------------------------------------//
+//  $GRIDS
+//------------------------------------//
+
+@mixin grid {
+
+  .gw,
+  .grid-wrapper {
+    list-style: none;
+    margin-bottom: 0;
+    @include rem(margin-left, -$gutter, $base-font-size--mobile);
+    @include clearfix;
+  }
+
+  .gw--rev > .g,
+  .grid-wrapper--rev > .grid { float: right; }
+
+
+  .gw--full,
+  .grid-wrapper--full {
+    margin-left: 0;
+
+    > .g,
+    > .grid {
+      padding-left: 0;
+    }
+  }
+
+  .gw > .gw,
+  .grid-wrapper > .grid-wrapper { margin-left: 0; }
+
+
+  // Grid
+  .g,
+  .grid {
+    float: left;
+    width: 100%;
+    @include rem(padding-left, $gutter, $base-font-size--mobile);
+    @include transition(width .15s ease);
+  }
+}
+
+@include grid;
+
+

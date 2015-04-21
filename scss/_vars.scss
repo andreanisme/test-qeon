@@ -1,0 +1,63 @@
+//------------------------------------//
+//  $VARIABLES
+//------------------------------------//
+
+
+
+$legacy-ie: false !default;
+
+
+$reset:     false !default;
+$normalize: false !default;
+
+
+$push: true;
+$pull: true;
+
+
+$responsive:           true;
+$responsive-push-pull: true;
+
+
+$base-font-size:         15px;
+$base-line-height:       25px;
+$base-font-size--mobile: $base-font-size;
+
+
+
+$line-height-ratio: $base-line-height / $base-font-size;
+$base-spacing-unit: $line-height-ratio;
+$half-spacing-unit: $base-spacing-unit / 2;
+
+
+$gutter: $base-spacing-unit;
+
+
+$site-min-width:          320px;
+$site-wrapper-max-width:  1100px;
+
+
+
+$hand-start:   480px;
+$lap-start:    768px;
+$desk-start:   1024px;
+$wall-start:   1200px;
+
+
+$black:        #000;
+$gray-dark:    #4c4c4c;
+$gray:         #999;
+$gray-light:   #f0f0f0;
+$white:        #fff;
+
+$primary:      #203c7b; 
+$secondary:    #0084cb; 
+$tertiary:     #4f2683; 
+$quaternary:   #fff5a9; 
+
+$state-success:  #468847;
+$state-error:    #b94a48;
+
+// Fonts
+$font-body: Arial, Helvetica, sans-serif;
+

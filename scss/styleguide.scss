@@ -1,0 +1,225 @@
+
+$legacy-ie: true;
+@import "compass";
+@import "vars";
+@import "base/functions";
+@import "base/mixins";
+@import "ui/fonts";
+
+
+
+.qeon-landmark {
+  @include rem(margin-bottom, 3 * $base-spacing-unit);
+}
+
+.qeon-heading {
+  padding: 0 0 .5em;
+  border-bottom: 2px solid $gray;
+  
+}
+
+.qeon-demo-block {
+  background-color: $gray;
+  color: $white;
+  @include rem(padding, $half-spacing-unit);
+  @include rem(margin, 0 0 $base-spacing-unit);
+}
+
+.qeon-colors li {
+  border: 1px solid #ccc;
+  background: $white;
+  @include rem(padding, .4);
+  @include rem(margin-bottom, $half-spacing-unit);
+}
+
+.qeon-swatch {
+  display: block;
+  height: 100px;
+  width: 100px;
+}
+
+.qeon-field-container {
+  margin-bottom: 1em;
+
+  label {
+    display: block;
+  }
+}
+
+.qeon-logo {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 70px;
+}
+
+.transparent-background{
+  background-color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+
+}
+
+.intro{
+  padding: 10px;
+  p{
+
+  }
+  h2{
+    font-size: 33px;
+    font-family: 'groboldregular';
+    color: #ff5b00;
+    text-shadow: 2px 2px 0px #fff, 5px 5px 0px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.signup{
+  img{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: -13px;
+  }
+  h2{
+    font-size: 33px;
+    font-family: 'groboldregular';
+    color: #5a3825;
+    text-shadow: 2px 2px 0px #fff, 5px 5px 0px rgba(0, 0, 0, 0.15);
+    text-align: center;
+  }
+}
+
+.register {
+  text-align: center;
+  margin-top: 40px;
+  p{
+    margin: 0 !important
+  }
+  h3{
+  font-size: 19px;
+  font-family: 'groboldregular';
+  color: #5a3825;
+  margin: 0 !important;
+  text-shadow: 2px 2px 0px #fff, 5px 5px 0px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+}
+
+.character{
+  ul{
+    list-style-type: none;
+    li{
+      display: inline-block;
+      height: 214px;
+      margin: 0 1em 1em 0;
+      position: relative;
+      width: 150px;
+      -webkit-box-shadow: 11px 8px 16px -8px rgba(0,0,0,0.31);
+      -moz-box-shadow: 11px 8px 16px -8px rgba(0,0,0,0.31);
+      box-shadow: 11px 8px 16px -8px rgba(0,0,0,0.31);
+    }
+    li:hover{
+      opacity: 1;
+    }
+
+    li:hover > span.text-content  {
+      opacity: 0.8;
+    }
+  }
+}
+
+.character-mobile{
+  text-align: center;
+  ul{
+    list-style-type: none;
+    li{
+      display: inline-block;
+      -webkit-box-shadow: 11px 8px 16px -8px rgba(0,0,0,0.31);
+      -moz-box-shadow: 11px 8px 16px -8px rgba(0,0,0,0.31);
+      box-shadow: 11px 8px 16px -8px rgba(0,0,0,0.31);
+    }
+  }
+}
+
+span.text-content {
+  font-size: 33px;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 214px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+  cursor: hand;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+
+  span{
+    padding-top: 75px;
+    display: block;
+    text-align: center;
+  }
+}
+
+
+.form-signup{
+  background: #ffde92 url(../assets/img/pattern.png);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 2px solid #ebc978;
+  box-shadow: 1px 2px 1px #fffae4 inset;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
+
+.form-signup::before{
+  content: url(../assets/img/bat.png);
+  position: absolute;
+  top: 117px;
+}
+
+.form-signup-tablet{
+  background: #ffde92 url(../assets/img/pattern.png);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 2px solid #ebc978;
+  box-shadow: 1px 2px 1px #fffae4 inset;
+  margin-top: 50px;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
+
+.form-signup-tablet::before{
+  content: url(../assets/img/bat.png);
+  position: absolute;
+  top: 165px;
+  right:30px;
+
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+  .form-signup::before{
+  content: url(../assets/img/bat@2x.png);
+  position: absolute;
+  top: 117px;
+  width: 300px;
+  height: 148px;
+  }
+}
+
+

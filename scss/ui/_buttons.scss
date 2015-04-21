@@ -1,0 +1,38 @@
+//------------------------------------//
+//  $BUTTONS
+//------------------------------------//
+
+
+
+.btn {
+  vertical-align: top;
+  font-size: 33px;
+  background: #fefa1d;
+  background-image: none!important;
+  font-weight: normal;
+  border: 2px solid #e9ac07;
+  box-shadow: 1px 2px 3px white inset, 1px 2px 2px rgba(0,0,0,.4);
+  border-radius: 5px;
+  display: inline-block;
+  font-family: groboldregular;
+  padding: 5px 15px;
+  height: auto!important;
+  width: 100%;
+  color: #5b3825;
+  line-height: 20px!important;
+  margin: 0 auto;
+  padding: 12px;
+
+  &,
+  &:hover,
+  &:focus { 
+    box-shadow: 1px 2px 3px white inset, 1px 2px 2px rgba(0,0,0,.9);
+    text-decoration: none; 
+  }
+
+  &.disabled,
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: 0.65;
+  }
+}
